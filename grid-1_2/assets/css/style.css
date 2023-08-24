@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+.container-first-layout div {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.container-second-layout div {
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* * ---------- first layout  ---------- */
+
+.container-first-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 100px;
+}
+
+.container-first-layout .item:first-child {
+  background-color: red;
+  grid-column: 1/5;
+}
+
+.container-first-layout .item:nth-child(2) {
+  background-color: blue;
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.container-first-layout .item:nth-child(3) {
+  background-color: green;
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+.container-first-layout .item:nth-child(4) {
+  background-color: purple;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.container-first-layout .item:nth-child(5) {
+  background-color: purple;
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+/* * ---------- second layout ---------- */
+
+.container-second-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.container-second-layout .item:first-child {
+  background-color: pink;
+  grid-column: 1/5;
+}
+
+.container-second-layout .item:nth-child(2) {
+  background-color: skyblue;
+  grid-column: 1/3;
+  grid-row: 2/5;
+}
+
+.container-second-layout .item:nth-child(3) {
+  background-color: lightgreen;
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+.container-second-layout .item:nth-child(4) {
+  background-color: lightseagreen;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.container-second-layout .item:nth-child(5) {
+  background-color: sandybrown;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.container-second-layout .item:nth-child(6) {
+  background-color: lemonchiffon;
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+.container-second-layout .item:nth-child(7) {
+  background-color: plum;
+  grid-column: 4/5;
+  grid-row: 3/6;
+}
+
+.container-second-layout .item:nth-child(8) {
+  background-color: palevioletred;
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
+.container-second-layout .item:nth-child(9) {
+  background-color: slateblue;
+  grid-column: 1/5;
+  grid-row: 6/7;
+}

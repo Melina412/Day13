@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.item {
+  padding: 10px;
+}
+
+/* * ---------- grid container style --------- */
+
+body {
+  margin: 20px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 23vw 73vw;
+  grid-template-rows: 50px 600px 40px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+/* * ---------- grid items style --------- */
+
+header {
+  background-color: blue;
+  grid-area: header;
+}
+
+main {
+  background-color: red;
+  grid-area: main;
+}
+
+aside {
+  background-color: green;
+  grid-area: sidebar;
+}
+
+footer {
+  background-color: purple;
+  grid-area: footer;
+}
