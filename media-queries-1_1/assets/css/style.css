@@ -34,9 +34,12 @@ h2 {
 /*  gallery grid-template-columns in fr & item justify-self stretch damit größe der items beim verkleinern responsive ist */
 
 .item img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
+
+/* img: display block um die zu große gap zwischen den zeilen zu verhindern */
 
 /* * ---------- hover effect style ---------- */
 
